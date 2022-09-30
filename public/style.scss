@@ -1,0 +1,797 @@
+@import './variables';
+
+@mixin flex($direction){
+    margin: auto;
+    display: flex;
+    flex-direction: $direction;
+    align-items: center;
+    gap: 1rem;
+}
+
+@mixin grid-row{
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+
+@mixin w-screen{
+    width: 100%;
+    margin: auto;
+}
+
+@mixin screen-coloured{
+    margin: auto;
+    margin-block: 5rem;
+    width: 100%;
+    background-color: $secondary;
+    padding-block: 4rem;
+    text-align: center;   
+}
+@mixin screen-default{
+    margin: auto;
+    width: 100%;
+    background-color: $default;    
+}
+@mixin width70{
+    margin: auto;
+    width: 70%;
+}
+
+@mixin width85{
+    margin: auto;
+    width: 85%;
+}
+
+@mixin width90{
+    width: 90%;
+}
+
+@mixin widthSize($size){
+    margin: auto;
+    width: $size;
+}
+
+@mixin mobile-sm{
+    @media only screen and (max-width: 380px){
+        @content;
+    }
+}
+@mixin mobile{
+    @media only screen and (max-width: 820px){
+        @content;
+    }
+}
+
+@mixin tablet{
+    @media only screen and (max-width: 1200px){
+        @content;
+    }
+}
+
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border-width: 0;
+    border-style: solid;
+    border-color: $secondary;
+}
+
+html, body{
+    margin: auto;
+    background-color: $default;
+    scroll-behavior: smooth;
+    font-family: $body--text;
+    width: 100%;
+    height: 100%;
+    color: $text--dark;
+    line-height: 1.6;
+    transition: 700ms ease-in;
+    /* overflow-x: hidden; */
+    word-wrap: break-word;
+    scroll-padding-top: 15vh;
+}
+a{
+    color: inherit;
+    text-decoration: inherit;
+    cursor: pointer;
+}
+ul{
+    list-style-type: none;
+}
+div,
+button,
+h1,h2,h3,h4,h5,h6,
+span,p{
+    margin: 0;
+}
+h1{
+    color: $primary;
+    // text-transform: uppercase;
+    font-size: 4rem;
+    font-family: $heading--text;
+    text-shadow: 1px 1px 0px $dark;
+    // letter-spacing: 8px;
+    line-height: normal;
+
+    @include mobile{
+        font-size: 2rem;
+    }
+    @include mobile-sm(){
+        font-size: 1.5rem;
+    }
+    @include tablet(){
+        font-size: 2rem;
+    }
+}
+h2{
+    font-family: $heading--text;
+    font-size: 2rem;
+    text-transform: uppercase;
+
+    @include mobile{
+        font-size: 1.6rem;
+    }
+
+    @include mobile-sm(){
+        font-size: 1.1rem;
+    }
+
+    @include tablet(){
+        font-size: 1.7rem;
+    }
+}
+h3{
+    font-size: 1.4rem;
+}
+h4{
+    font-size: 1.2rem;
+}
+p{
+    font-size: 1.2rem;
+    font-family: $body--text;
+    text-align: justify;
+
+    @include mobile(){
+        font-size: 1.1rem;
+    }
+    @include mobile-sm(){
+        font-size: 1rem;
+    }
+    @include tablet(){
+        font-size: 1.1rem;
+    }
+}
+img{
+    max-width: 100%;
+    margin: auto;
+    object-fit: cover;
+    display: block;
+    height: auto;
+}
+input, 
+select,  
+textarea{
+    font-family: inherit;
+    padding: 1rem 0.5rem;
+    border-radius: 0.5rem;
+    background-color: $default;
+    color: inherit;
+    resize: none;
+}
+input[type=submit]{
+    background-color: $primary;
+    font-weight: bolder;
+    border: none;
+    border-radius: 0;
+    color: $white;
+    font-family: $body--text;
+    font-weight: bold;
+}
+button{
+    width: max-content;
+    margin: 1rem auto;
+    font-size: 1rem;
+    background-color: $primary;
+    color: $white;
+    padding: 0.8rem 1.5rem;
+    border-width: 1px;
+    border-color: $dark;
+    border-radius: 1rem;
+    text-transform: uppercase;
+    box-shadow: -2px 2px $dark;
+    font-family: $body--text;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+
+
+    @include mobile{
+        padding: 0.8rem;
+    }
+
+    @include mobile-sm(){
+        padding: 0.3rem 0.5rem;
+    }
+
+    &:hover{
+        background-color: $extras;
+        box-shadow: -5px 5px $dark;
+        transition: 700ms ease-in-out;
+        place-items: center;
+    }
+}
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  -webkit-appearance: button;
+  /* 1 */
+  /* 2 */
+  background-image: none;  
+  /* 2 */
+  color: $white;
+  font-family: $body--text;
+  font-weight: bold;
+
+}
+
+// Main project styling starts here
+
+// Header component
+header{
+    width: 80%;
+    margin: auto;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+
+    img{
+        width: 100%;
+    }
+
+    @include mobile(){
+        @include flex(column);
+    }
+
+    @include tablet(){
+        @include width90();
+    }
+
+}
+
+// Nav
+nav{
+    position: fixed;
+    // background-color: $primary;
+    backdrop-filter: blur(5px);
+    z-index: 50;
+    top: 0;
+    @include w-screen;
+    border-top: 0.5rem solid $primary;
+    @include flex(row);
+    justify-content: space-between;
+    padding-inline: 10rem;
+
+    @include mobile(){
+        display: none;
+    }
+
+    @include tablet(){
+        display: none;
+    }
+
+    ul{
+        @include flex(row);
+        margin: 0;
+
+        li{
+            font-family: $heading--text;
+            text-transform: capitalize;
+            font-size: 1.2rem;
+        }
+    }
+
+    h2{
+        font-family: $heading1--text;
+    }
+
+    
+}
+
+// section styling
+section{
+    align-items: start;
+    padding-block: 4rem;
+
+    &>div{
+        @include width70();
+        @include grid-row();
+        align-items: start;
+        gap: 5rem;
+        
+        img{
+            width: 100%;
+        }
+
+        @include mobile(){
+            @include width85();
+            @include flex(column);
+        }
+
+        @include tablet(){
+            @include width90();
+        }
+    }
+}
+.section--coloured{
+    @extend section;
+    background-color: $secondary;
+}
+
+// mini section
+.mini--section{
+    background-color: $secondary;
+    padding-block: 3rem;
+
+    & > div{
+        @include width70();
+        @include flex(row);
+        text-align: center;
+        
+        @include mobile(){
+            @include width85();
+            flex-direction: column;
+        }
+
+        @include tablet(){
+            @include width90();
+            flex-direction: column;
+        }
+    }
+
+}
+
+// contact division styling
+#contactDiv{
+    padding-block: 4rem;
+    // background-color: $secondary;
+    
+    .contactDiv--content{
+        @include width70();
+        padding-inline: 1rem;
+
+        @include mobile(){
+            @include width85();
+        }
+
+        @include tablet(){
+            @include width90();
+        }
+
+        .contactDiv--header{
+            text-align: center;
+            margin-block: 2rem
+        }
+
+        .contactDiv--items{
+            @include grid-row();
+
+            @include mobile(){
+                display: flex;
+                flex-direction: column;
+
+                iframe{
+                    width: 100%;
+                }
+            }
+
+           
+
+            .contactDiv--info{
+                @include flex(row);
+                justify-content: flex-start;
+                align-items: center;
+                gap: 1rem;
+                margin-block: 2rem;
+
+                h4{
+                    font-size: 1rem;
+                    text-transform: uppercase;
+                }
+
+                .icon{
+                    font-size: 2.5rem;
+                }
+                
+            }
+
+            .contactDiv--icons{
+                @extend .contactDiv--info;
+            }
+        }
+    }
+}
+
+// contact page styling
+.contact{ 
+    margin-top: 5vh;
+    margin-bottom: 50vh;
+
+    .contact--header{
+        margin: auto;
+        height: 50vh;
+        @include flex(row);
+        text-align: center;
+        background-image: url(./coding-man.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        h1{
+            width: 100%;
+        }
+    }
+
+    .contact--form{
+        @include width70();
+        @include flex(row);
+        align-items: flex-start;
+        background-color: $secondary;
+        color: $dark;
+        margin-block: -8rem;
+        padding: 5rem 5rem;
+         
+
+        *{
+            width: 100%;
+        }
+
+        form{
+            border: solid $primary;
+            padding: 1rem;
+            @include flex(column);
+            
+        }
+    }
+}
+
+// ABOUT component
+.about{
+    margin-top: 5vh;
+    margin-bottom: 50vh;
+
+    .about--header{
+        margin: auto;
+        height: 50vh;
+        text-align: center;
+        @include flex(row);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url(./9.jpg);
+        background-size: cover;
+
+        h1{
+            width: 100%;
+        }
+
+    }
+    .about--content{
+        @include width70();
+        @include grid-row();
+        align-items: flex-start;
+        background-color: $secondary;
+        color: $dark;
+        margin-block: -8rem;
+        padding: 5rem;
+        box-shadow: 5px 5px  $default, 
+                    5px 5px $default inset;
+    }
+}
+// HOW WE WORK - CARDs
+.work--card1{
+    width: 350px;
+    height: 100%;
+    @include flex(column);
+    text-align: justify;
+    margin: 0.5rem;
+    margin: auto;
+    padding: 1rem 1.5rem;
+    background-color: $default;
+    border-top-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    transition: all 300ms;
+
+    @include mobile-sm{
+        margin: auto;
+        width: 100% !important;
+        padding: 1rem;
+    }
+
+    @include mobile(){
+        margin: auto;
+        width: 100%;
+    }
+
+    *{
+        width: 100%;
+        // border: solid yellow;
+    }
+
+    h4{
+        font-size: 1.4rem;
+        color: $extras;
+    }
+    h3{
+        color: gray;
+    }
+    p{
+        color: $gray;
+    }
+
+    &:hover{
+        background-color: $dark;
+    }
+}
+.work--card2{
+    @extend .work--card1;
+    background-color: $extras;
+
+    h4{
+        color: $secondary;
+    }
+
+    h3{
+        color: $primary;
+    }
+
+    p{
+        color: $dark;
+    }
+
+    &:hover{
+        background-color: $gray;
+    }
+}
+.work--card3{
+    @extend .work--card1;
+    background-color: $primary;
+    
+
+    *{
+        color: $default !important;
+    }
+
+    &:hover{
+        background-color: $gray;
+    }
+}
+.work--card4{
+    @extend .work--card1;
+    background-color: $gray;
+
+    @include mobile-sm(){
+        width: 85%;
+    }
+
+    h4{
+        color: $dark;
+    }
+
+    h3{
+        color: $extras;
+    }
+
+    p{
+        color: $default;
+    }
+
+    &:hover{
+        background-color: $secondary;
+    }
+}
+
+// WORK CARDs SECTION
+.work--section{
+    @include screen-coloured();
+
+    h2{
+        margin-block: 2rem;
+    }
+
+    .work--section--content{
+        @include width70();
+
+        @include mobile(){
+            width: 90%;
+        }
+
+        @include tablet(){
+            @include width90();
+        }
+
+        .w--section--cards{
+            @include flex(row);
+            justify-content: center;
+            flex-wrap: wrap;
+
+            @include mobile-sm(){
+                flex-direction: column;
+                flex-wrap: nowrap;
+            }
+            
+        }
+
+        
+    }
+}
+
+// SERVICES Section
+.service--card1{
+    @extend .work--card1;
+    width: 300px;
+
+    @include mobile-sm(){
+        width: 100%;
+    }
+
+    @include mobile(){
+        width: 300px;
+    }
+
+    img{
+        width: 80%;
+        border-radius: 50%;
+    }
+}
+.service--card2{
+    @extend .work--card2;
+    width: 300px;
+
+    @include mobile(){
+        width: 80%;
+    }
+
+    img{
+        width: 80%;
+        border-radius: 50%;
+    }
+}
+.service--card3{
+    @extend .work--card3;
+    width: 300px;
+
+    @include mobile(){
+        width: 80%;
+    }
+
+    img{
+        width: 80%;
+        border-radius: 50%;
+    }
+}
+.service--card4{
+    @extend .work--card4;
+    width: 300px;
+
+    @include mobile(){
+        width: 80%;
+    }
+
+    img{
+        width: 80%;
+        border-radius: 50%;
+    }
+}
+.service--card5{
+    @extend .service--card4;
+    background-color: $white;
+
+    img{
+        width: 80%;
+        border-radius: 50%;
+    }
+
+    &:hover{
+        background-color: $dark;
+    }
+}
+.service--card6{
+    @extend .service--card4;
+    background-color: $dark;
+
+    h4{
+        color: $primary;
+    }
+
+    p{
+        color: $default;
+    }
+
+    img{
+        width: 80%;
+        border-radius: 50%;
+    }
+
+    &:hover{
+        background-color: $white;
+    }
+}
+
+.service--section{
+    @extend .work--section;
+
+    .service--section--content{
+        @extend .work--section--content;
+
+        @include mobile-sm(){
+            width: 85%;
+        }
+
+        .s--section--cards{
+            @extend .w--section--cards;
+        }
+    }
+}
+
+
+// FOOTER
+footer{
+    background-color: $dark;
+    padding-top: 6rem;
+    margin-top: 10rem;
+
+    .footer--content{
+        @include width70();
+        @include flex(column);
+        color: $default;
+
+        @include mobile{
+            @include width85();
+        }
+        
+        @include tablet(){
+            @include width90()
+        }
+
+        *{
+            width: 100%;
+        }
+
+        div{
+            @include flex(row);
+            align-items: flex-start;
+            justify-content: flex-start;
+
+            @include mobile(){
+                flex-direction: column;
+            }
+
+            ul{
+                li, a{
+                    line-height: 2;
+                    text-transform: capitalize;
+                }
+                
+                li:first-child{
+                    font-size: 1.2rem;
+                    font-weight: bolder;
+                }       
+            }
+        }
+        
+        p{
+            margin: auto;
+            text-align: center;
+            padding-top: 10rem;
+        }
+
+    }
+}
