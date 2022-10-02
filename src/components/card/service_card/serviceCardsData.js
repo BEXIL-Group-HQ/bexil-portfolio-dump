@@ -1,7 +1,7 @@
 import web_designer from "../../../assets/web_design.svg"
 import web_maintenance from "../../../assets/web_maintenance.svg"
-import app_dev from "../../../assets/app_dev.png"
-import graphic_design from "../../../assets/graphic_design.svg"
+import app_dev from "../../../assets/app_dev.svg"
+import graphic_design from "../../../assets/Designer _Flatline.svg"
 import repairs from "../../../assets/repairs.svg"
 // import web_maintenance from "../../../assets/web_maintenance.svg"
 

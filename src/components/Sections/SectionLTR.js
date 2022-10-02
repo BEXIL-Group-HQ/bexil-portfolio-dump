@@ -7,7 +7,6 @@ export default function SectionLTR({title, description, button, image, type}) {
   const className = type === "coloured" ? "section--coloured" : ""
   return (
     <section className={className}>
-        <div>
           <Fade left>
             <div>
                 <img src={image} alt="Designer" />
@@ -20,7 +19,6 @@ export default function SectionLTR({title, description, button, image, type}) {
                 {button && <button>{button}</button>}
             </div>
           </Fade>
-        </div>
     </section>
   )
 }
