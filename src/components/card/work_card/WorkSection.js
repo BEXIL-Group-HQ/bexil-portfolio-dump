@@ -6,9 +6,8 @@ import { Fade, LightSpeed, Roll, Slide } from "react-reveal"
 export default function WorkSection() {
     const cards = workData.map((item, index) => {
         return (
-                <Roll>
+                <Roll key={index}>
                   <WorkCard 
-                  key={index}
                   position={item.position}
                   title={item.title}
                   desc={item.desc}

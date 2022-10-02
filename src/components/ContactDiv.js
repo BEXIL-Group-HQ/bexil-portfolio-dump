@@ -14,25 +14,25 @@ export default function ContactDiv() {
 
             <div className='contactDiv--items'>
                 <div>
-                    <div class="gmap_canvas">
+                    <div className="gmap_canvas">
                         <iframe className='g--map' width="80%" height="300px" id="gmap_canvas" src="https://maps.google.com/maps?q=Zone%205,%20Standard%20Plaza&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
                         </iframe>
                     </div>
-                    <div class="contactDiv--info">
+                    <div className="contactDiv--info">
                         <ImLocation2 className='icon'/>
                         <div>
                             <h4>Visit us:</h4>
                             <p>Wuse II, Abuja, Nigeria.</p>
                         </div>
                     </div>
-                    <div class="contactDiv--info">
+                    <div className="contactDiv--info">
                         <FaAt className='icon'/>
                         <div>
                             <h4>Mail us:</h4>
                             <p>support@techdesk.io</p>
                         </div>
                     </div>
-                    <div class="contactDiv--info">
+                    <div className="contactDiv--info">
                         <ImPhone className='icon'/>
                         <div>
                             <h4>Call us via:</h4>

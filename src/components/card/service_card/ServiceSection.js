@@ -6,9 +6,8 @@ import {cardData} from './serviceCardsData'
 export default function ServiceSection() {
     const cards = cardData.map((item, index) => {
         return (
-                <Bounce>
+                <Bounce key={index}>
                   <ServiceCard 
-                  key={index}
                   image={item.image}
                   title={item.title}
                   desc={item.desc}

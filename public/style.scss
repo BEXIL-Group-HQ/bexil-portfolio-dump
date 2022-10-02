@@ -1,5 +1,22 @@
 @import './variables';
 
+@mixin mobile-sm{
+    @media only screen and (max-width: 380px){
+        @content;
+    }
+}
+@mixin mobile{
+    @media only screen and (max-width: 820px){
+        @content;
+    }
+}
+
+@mixin tablet{
+    @media only screen and (min-width: 821px) and (max-width: 1300px){
+        @content;
+    }
+}
+
 @mixin flex($direction){
     margin: auto;
     display: flex;
@@ -18,7 +35,6 @@
 
 @mixin w-screen{
     width: 100%;
-    margin: auto;
 }
 
 @mixin screen-coloured{
@@ -54,22 +70,7 @@
     width: $size;
 }
 
-@mixin mobile-sm{
-    @media only screen and (max-width: 380px){
-        @content;
-    }
-}
-@mixin mobile{
-    @media only screen and (max-width: 820px){
-        @content;
-    }
-}
 
-@mixin tablet{
-    @media only screen and (max-width: 1200px){
-        @content;
-    }
-}
 
 
 *,
@@ -279,42 +280,151 @@ header{
 
 // Nav
 nav{
-    position: fixed;
-    // background-color: $primary;
-    backdrop-filter: blur(5px);
-    z-index: 50;
-    top: 0;
     @include w-screen;
+    position: fixed;
+    z-index: 50;
+    backdrop-filter: blur(5px);
+    top: 0;
     border-top: 0.5rem solid $primary;
-    @include flex(row);
-    justify-content: space-between;
     padding-inline: 10rem;
 
-    @include mobile(){
+    #hideMenu, #showMenu{
         display: none;
+        margin: 1rem 0.5rem;
+        cursor: pointer;
+    }
+    
+    h2{
+        // @include flex(row);
+        // margin: 0 0.2rem;
+        // justify-content: space-between;
+        // gap: 0rem;
+        // font-family: $heading1--text;
     }
 
-    @include tablet(){
-        display: none;
-    }
-
-    ul{
+    & > div{
         @include flex(row);
-        margin: 0;
+        justify-content: space-between;
 
-        li{
-            font-family: $heading--text;
-            text-transform: capitalize;
-            font-size: 1.2rem;
+        ul{
+            @include flex(row);
+            margin: 0;
+            transition: .5s;
+
+            a{
+                text-decoration: none;
+                text-transform: capitalize;
+            }
+
+            li{
+                font-family: $heading--text;
+                text-transform: capitalize;
+                font-size: 1.2rem;
+                transition: .5s;
+
+                :hover{
+                    border-bottom-width: 2px;
+                    border-color: $extras;
+                    transition: .5s;
+                }
+            }
+
+        }
+
+        h2{
+            font-family: $heading1--text;
         }
     }
 
-    h2{
-        font-family: $heading1--text;
+    @include mobile(){
+        display: flex;
+        flex-direction: column;
+        left: initial;
+        bottom:initial;
+        right: initial;
+        top: 0;
+        padding-inline: 1rem;
+        padding: 0;
+        margin: 0;
+        display: flex;
+
+        #showMenu{
+            display: block;
+        }
+
+        & > div{
+            display: none;
+            width: 100% !important;
+            height: 100vh; 
+            background-color: $secondary;
+            flex-direction: column;
+            justify-content: center;
+            gap: 0.5rem;
+            
+                ul{
+                    flex-direction: column;
+                    transition: all .5s;
+            
+                    li{
+                        margin-block: 1rem;
+                        letter-spacing: 5px;
+                        transition: transform 400ms ease-in-out;
+                    }
+
+                    a{
+                        text-transform: uppercase;
+                        transition: transform 400ms ease-in-out;
+                    }  
+                }
+                h2, button{
+                    display: none;
+                } 
+        }
     }
 
-    
+    @include tablet(){
+        padding-inline: 2rem;
+
+        & > div{
+            width: 100%;
+
+            a{
+                text-transform: uppercase !important;
+            }
+
+            button{
+                display: none;
+            }
+        }
+    }
 }
+
+    // @include tablet(){
+    //     padding-inline: 1rem;
+    //     text-transform: capitalize;
+    //     width: 100%;
+
+    //     a{
+    //         text-transform: capitalize !important;
+    //     }
+
+    //     ul{
+    //         text-transform: capitalize;
+    //     }
+
+    //     li{
+    //         font-size: 1rem;
+    //     }
+
+    //     button{
+    //         display: none;
+    //     }
+
+    //     h2{
+    //         font-size: 1rem;
+    //     }
+    // }
+
 
 // section styling
 section{
