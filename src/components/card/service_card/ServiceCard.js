@@ -10,7 +10,7 @@ export default function ServiceCard({image, title, desc}){
           <h4>{title}</h4>
           <p>{desc}</p>
         </div>
-        <img src={image} alt="app development" />
+        <img src={image} alt={title} loading="lazy"/>
     </div>
   )
 }

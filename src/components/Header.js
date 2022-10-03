@@ -9,7 +9,7 @@ export default function Header() {
     <header>
         <Fade left >
         <div>
-            <h1>Let Tech Desk give your Business a digital kickstart!</h1>
+            <h1>Let Tech Desk scale up your business the digital way!</h1>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam soluta quos natus veritatis tempora nihil maxime adipisci dolorum nobis, illum placeat ad sequi ut quas ullam, explicabo, animi similique excepturi sit accusamus impedit eum corporis rem. Deleniti ratione vitae iure.
             </p>

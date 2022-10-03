@@ -4,7 +4,7 @@ export default function MiniSection() {
   return (
     <div className='mini--section'>
         <h2>Lets Launch your website in 7 days or less</h2> 
-        <button>Check here</button>
+        <button>SEND DETAILS</button>
     </div>
   )
 }

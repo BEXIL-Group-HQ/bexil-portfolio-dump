@@ -261,7 +261,7 @@ header{
     }
 
     @include mobile(){
-        @include flex(column);
+        @include flex(column-reverse);
         width: 80%;
         height: 100vh;
         gap: 2rem;
