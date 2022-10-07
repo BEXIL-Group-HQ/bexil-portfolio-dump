@@ -244,6 +244,9 @@ nav #hideMenu, nav #showMenu {
   margin: 1rem 0.5rem;
   cursor: pointer;
 }
+nav img {
+  width: 200px;
+}
 nav > div {
   margin: auto;
   display: flex;

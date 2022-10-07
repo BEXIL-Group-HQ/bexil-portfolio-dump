@@ -302,6 +302,10 @@ nav{
         // font-family: $heading1--text;
     }
 
+    img{
+        width: 200px;
+    }
+
     & > div{
         @include flex(row);
         justify-content: space-between;

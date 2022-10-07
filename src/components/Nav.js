@@ -3,6 +3,8 @@ import { FaBars, FaTimes } from 'react-icons/fa';
 import { NavLink } from "react-router-dom";
 import { HashLink } from 'react-router-hash-link';
 
+// logo import
+import logo from "../assets/techDesk_logo.png"
 
 export default function Nav() {
 
@@ -51,7 +53,8 @@ export default function Nav() {
                 </li>
             </ul>
             
-            <h2>tech desk</h2>
+            {/* <h2>tech desk</h2> */}
+            <img src={logo} alt='Tech Desk Inc. Logo' />
 
             <ul>
                 <li>
