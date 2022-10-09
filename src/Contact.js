@@ -1,11 +1,11 @@
 import React from 'react'
 import { Fade } from "react-reveal"
-import { ImLinkedin, ImLocation2, ImAttachment, ImPhone } from "react-icons/im"
-import { FaAt, FaLinkedin, FaLinkedinIn, FaTwitter } from "react-icons/fa"
+import { ImLocation2, ImPhone } from "react-icons/im"
+import { FaAt, FaLinkedin, FaTwitter } from "react-icons/fa"
 
-// image
-import codingman from "./assets/coding-man.jpg"
-import Footer from './Footer'
+// // image
+// import codingman from "./assets/coding-man.jpg"
+// import Footer from './Footer'
 
 export default function Contact() {
   return (

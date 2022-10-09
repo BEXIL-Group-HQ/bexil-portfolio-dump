@@ -1,5 +1,5 @@
 import React from 'react'
-import { Fade, Roll } from 'react-reveal'
+import { Fade } from 'react-reveal'
 
 
 

@@ -1,0 +1,19 @@
+{
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "margin-block",
+          "padding-inline",
+          "scroll-behavior",
+          "backdrop-filter",
+          "padding-block"
+        ]
+      }
+    ]
+  }
+}
