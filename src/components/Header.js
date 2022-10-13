@@ -1,5 +1,6 @@
 import React from 'react'
-import { Fade, Slide, Zoom } from 'react-reveal'
+import { Fade, Zoom } from 'react-reveal'
+import { HashLink } from 'react-router-hash-link'
 
 // images
 import heroImage from '../assets/Developer.svg'
@@ -11,8 +12,9 @@ export default function Header() {
         <div>
             <h1>Let Tech Desk scale up your business the digital way!</h1>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam soluta quos natus veritatis tempora nihil maxime adipisci dolorum nobis, illum placeat ad sequi ut quas ullam, explicabo, animi similique excepturi sit accusamus impedit eum corporis rem. Deleniti ratione vitae iure.
+                We are focused on boosting the productivity and growth of businesses using Tech. Digitally helping businesses yield higher percentages.  
             </p>
+            <p>See <mark style={{borderBottom: "1px ridge #FF9270"}}><HashLink to="#whyOwnASite">why you need a website!</HashLink></mark></p>
             <button>
                 <a href="/contact">HIRE US TODAY!</a>
             </button>

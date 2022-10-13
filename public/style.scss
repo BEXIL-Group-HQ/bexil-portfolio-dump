@@ -1,5 +1,11 @@
 @import './variables';
 
+@mixin screnSize($size){
+    @media only screen and (max-width: $size){
+        @content;
+    }
+}
+
 @mixin mobile-sm{
     @media only screen and (max-width: 380px){
         @content;
@@ -202,7 +208,7 @@ button{
     background-color: $primary;
     color: $white;
     padding: 0.5rem 0.8rem;
-    border-radius: 0.8rem;
+    border-radius: 20px 100px 20px;
     text-transform: uppercase;
     box-shadow: -2px 2px $dark;
     font-family: $body--text;
@@ -225,6 +231,7 @@ button{
         box-shadow: -5px 5px $dark;
         transition: 700ms ease-in-out;
         place-items: center;
+        border-radius: 5px 20px 5px;
     }
 }
 button,
@@ -555,6 +562,7 @@ section{
     .contact--form{
         @include width70();
         @include flex(row);
+        gap: 3rem;
         align-items: flex-start;
         background-color: $secondary;
         color: $dark;
@@ -571,6 +579,12 @@ section{
             padding: 1rem;
             @include flex(column);
             
+        }
+
+        @include mobile(){
+            @include width85();
+            flex-direction: column;
+            padding: 1rem;
         }
     }
 }
@@ -623,7 +637,7 @@ section{
 
     @include mobile-sm{
         margin: auto;
-        width: 100% !important;
+        width: 90% !important;
         padding: 1rem;
     }
 
@@ -809,6 +823,64 @@ section{
         }
 }
 
+// The Team section
+
+.team--section{
+    @extend .work--section;
+
+    .team--card--section{
+        @extend .w--section--cards;
+
+        @include mobile(){
+            flex-direction: column;
+        }
+    }
+}
+
+.team--card{
+    margin: auto;
+    width: 360px;
+    @include flex(column);
+    justify-content: center;
+    gap: 0rem;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 20px 100px 20px;
+    background-color: $default;
+    transition: all 3000;
+
+    &:hover{
+        transform: scale(1.1);
+
+    }
+
+    img{
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+    }
+
+    *{
+        width: 100%;
+        text-align: center;
+    }
+
+    @include mobile(){
+        width: 70%;
+    }
+
+    @include screnSize(500px){
+        width: 90%;
+
+        h3{
+            font-size: 1.2rem;
+        }
+        h4{
+            font-size: 1rem;
+        }
+    }
+
+}
 
 // FOOTER
 footer{

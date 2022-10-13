@@ -61,7 +61,7 @@ export default function Nav() {
                     <NavLink>Portfolio</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/contact">contact us</NavLink>
+                    <HashLink to="#contactDiv">contact us</HashLink>
                 </li>
                 <button>
                     <NavLink>Schedule a call</NavLink>

@@ -153,7 +153,7 @@ button {
   background-color: #FF9270;
   color: #fff;
   padding: 0.5rem 0.8rem;
-  border-radius: 0.8rem;
+  border-radius: 20px 100px 20px;
   text-transform: uppercase;
   box-shadow: -2px 2px #212121;
   font-family: "Poppins", sans-serif;
@@ -177,6 +177,7 @@ button:hover {
   box-shadow: -5px 5px #212121;
   transition: 700ms ease-in-out;
   place-items: center;
+  border-radius: 5px 20px 5px;
 }
 
 button,
@@ -487,6 +488,7 @@ section img, .section--coloured img {
   flex-direction: row;
   align-items: center;
   gap: 1rem;
+  gap: 3rem;
   align-items: flex-start;
   background-color: #f8dcca;
   color: #212121;
@@ -504,6 +506,14 @@ section img, .section--coloured img {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+}
+@media only screen and (max-width: 820px) {
+  .contact .contact--form {
+    margin: auto;
+    width: 85%;
+    flex-direction: column;
+    padding: 1rem;
+  }
 }
 
 .about {
@@ -562,7 +572,7 @@ section img, .section--coloured img {
 @media only screen and (max-width: 380px) {
   .work--card1, .service--card1, .work--card4, .service--card4, .service--card6, .service--card5, .work--card3, .service--card3, .work--card2, .service--card2 {
     margin: auto;
-    width: 100% !important;
+    width: 90% !important;
     padding: 1rem;
   }
 }
@@ -636,7 +646,7 @@ section img, .section--coloured img {
   background-color: #f8dcca;
 }
 
-.work--section, .service--section {
+.work--section, .team--section, .service--section {
   margin: auto;
   width: 70%;
   margin-block: 3rem;
@@ -645,20 +655,20 @@ section img, .section--coloured img {
   text-align: center;
   border-radius: 1rem;
 }
-.work--section h2, .service--section h2 {
+.work--section h2, .team--section h2, .service--section h2 {
   margin-block: 2rem;
 }
 @media only screen and (max-width: 820px) {
-  .work--section, .service--section {
+  .work--section, .team--section, .service--section {
     width: 90%;
   }
 }
 @media only screen and (min-width: 821px) and (max-width: 1300px) {
-  .work--section, .service--section {
+  .work--section, .team--section, .service--section {
     width: 90%;
   }
 }
-.work--section .w--section--cards, .service--section .w--section--cards, .service--section .s--section--cards {
+.work--section .w--section--cards, .team--section .w--section--cards, .team--section .team--card--section, .service--section .w--section--cards, .service--section .s--section--cards {
   margin: auto;
   display: flex;
   flex-direction: row;
@@ -668,7 +678,7 @@ section img, .section--coloured img {
   flex-wrap: wrap;
 }
 @media only screen and (max-width: 380px) {
-  .work--section .w--section--cards, .service--section .w--section--cards, .service--section .s--section--cards {
+  .work--section .w--section--cards, .team--section .w--section--cards, .team--section .team--card--section, .service--section .w--section--cards, .service--section .s--section--cards {
     flex-direction: column;
     flex-wrap: nowrap;
   }
@@ -723,6 +733,57 @@ section img, .section--coloured img {
     width: 85%;
   }
 }
+@media only screen and (max-width: 820px) {
+  .team--section .team--card--section {
+    flex-direction: column;
+  }
+}
+
+.team--card {
+  margin: auto;
+  width: 360px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+  gap: 0rem;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 20px 100px 20px;
+  background-color: rgb(240, 239, 239);
+  transition: all 3000;
+}
+.team--card:hover {
+  transform: scale(1.1);
+}
+.team--card img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+}
+.team--card * {
+  width: 100%;
+  text-align: center;
+}
+@media only screen and (max-width: 820px) {
+  .team--card {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .team--card {
+    width: 90%;
+  }
+  .team--card h3 {
+    font-size: 1.2rem;
+  }
+  .team--card h4 {
+    font-size: 1rem;
+  }
+}
+
 footer {
   background-color: #212121;
   padding-top: 6rem;

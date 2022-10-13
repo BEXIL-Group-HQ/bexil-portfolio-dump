@@ -5,7 +5,7 @@ import Nav from "./components/Nav";
 import Footer from "./Footer";
 // import Contact from "./components/Contact";
 import About from "./components/About";
-import Contact from "./Contact";
+import GetQuote from "./GetQuote";
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
       <Nav />
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/getquote" element={<GetQuote />} />
         <Route path="/about" element={<About />} />
       </Routes>
       <Footer />

@@ -1,6 +1,6 @@
 import React from 'react'
-import { ImLinkedin, ImLocation2, ImAttachment, ImPhone } from "react-icons/im"
-import { FaAt, FaLinkedin, FaLinkedinIn, FaTwitter } from "react-icons/fa"
+import { ImLocation2, ImPhone } from "react-icons/im"
+import { FaAt, FaLinkedin, FaTwitter } from "react-icons/fa"
 import { Fade } from 'react-reveal'
 
 export default function ContactDiv() {

@@ -12,8 +12,9 @@ export const sectionsData = [
         "image": team
     },
     {
+        "id": "#whyOwnASite",
         "title": "WHY OWN A WEBSITE!?",
-        "desc": "According to Forbes \"having a website is an opportunity to make a great first impression and give people comfort that you're a real business.\" With the invention of the Internet, life started a whole new journey with generation of computers getting better. It has grown to be the most preferrable way of communication. With roughly over 60% of the global population using the internet, Websites play an important role as over 70% of small business today own a Website. A website does not only give an easy finding and up to date info about a brand/company but also increases your business' credibility.",
+        "desc": "According to Forbes \"having a website is an opportunity to make a great first impression and give people comfort that you're a real business.\" With the invention of the Internet, life started a whole new journey with generation of computers getting better. It has grown to be the most preferrable way of communication from Social media to Portfolio websites. With roughly over 60% of the global population using the internet, Websites play an important role as over 70% of small business or individuals/Freelancers today own a Website. A website does not only give an easy finding and up to date info about a brand/company but also increases your business' credibility.",
         "button": "get one",
         "image": why,
         "button": "get a quote"

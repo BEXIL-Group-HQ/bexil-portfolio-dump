@@ -5,10 +5,11 @@ import SectionRTL from './components/Sections/SectionRTL'
 import SectionLTR from './components/Sections/SectionLTR'
 import InfoDiv from './components/MiniSection'
 // import Contact from './components/Contact'
-import ServiceCard from './components/card/service_card/ServiceCard'
-import ServiceSection from './components/card/service_card/ServiceSection'
-import WorkSection from './components/card/work_card/WorkSection'
+import ServiceSection from './components/services/ServiceSection'
+import WorkSection from './components/ourProcess/WorkSection'
 import ContactDiv from './components/ContactDiv'
+import ChooseUsSection from './components/whyChooseUs/ChooseUsSection'
+import TheTeam from './components/theTeam/TheTeamSection'
 
 export default function Home() {
   return (
@@ -42,6 +43,7 @@ export default function Home() {
         button={sectionsData[4].button}
         image={sectionsData[4].image}
         />
+        <ChooseUsSection />
         <SectionRTL
         title={sectionsData[3].title}
         description={sectionsData[3].desc}
@@ -49,6 +51,7 @@ export default function Home() {
         image={sectionsData[3].image}
         type="coloured"
         />
+        <TheTeam />
         <ContactDiv />
     </React.StrictMode>
   )
