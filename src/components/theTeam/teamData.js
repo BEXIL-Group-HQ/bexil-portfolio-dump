@@ -9,16 +9,16 @@ export const theTeamData = [
     {
         "image": eimaam,
         "name": "Imam Dahir Dan-Azumi",
-        "title": "Frontend Developer, UX Designer"
+        "title": "Frontend Developer"
     },
     {
         "image": eimaam,
-        "name": "Imam Dahir Dan-Azumi",
-        "title": "Fullstack Developer"
+        "name": "Ben Chris",
+        "title": "Backend Developer | Python"
     },
     {
         "image": eimaam,
-        "name": "Imam Dahir Dan-Azumi",
+        "name": "Alexander",
         "title": "Mobile Developer | Flutter"
     },
     {

@@ -14,9 +14,9 @@ export default function Header() {
             <p>
                 We are focused on boosting the productivity and growth of businesses using Tech. Digitally helping businesses yield higher percentages.  
             </p>
-            <p>See <mark style={{borderBottom: "1px ridge #FF9270"}}><HashLink to="#whyOwnASite">why you need a website!</HashLink></mark></p>
+            <p>See <span style={{borderBottom: "1px ridge #FF9270"}}><HashLink to="#whyOwnASite">why you need a website!</HashLink></span></p>
             <button>
-                <a href="/contact">HIRE US TODAY!</a>
+                <a href="/getquote">HIRE US TODAY!</a>
             </button>
         </div>
         </Fade>

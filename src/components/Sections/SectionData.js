@@ -8,7 +8,7 @@ export const sectionsData = [
     {
         "title": "Certified Team of Developers & Engineers",
         "desc": "Our Certified Team of Engineers and Management are always ready to work hand-in-hand as always to make sure your job gets delivered in due time from planning to prototyping, design, coding and finally deployment!",
-        "button": "Check the Team",
+        "button": "Meet the Team",
         "image": team
     },
     {

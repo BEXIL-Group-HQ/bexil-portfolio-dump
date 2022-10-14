@@ -16,7 +16,7 @@ export default function TheTeam() {
     })
   return (
     <div className='team--section' id='team'>
-      <h2>THE TEAM</h2>
+      <h2>MEET THE TEAM</h2>
       <div className='team--card--section'>
           {cards}
       </div>
