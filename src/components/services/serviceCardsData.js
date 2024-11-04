@@ -7,38 +7,23 @@ import repairs from "../../assets/repairs.svg"
 
 export const cardData = [
     {
-        "title": "Taxations",
-        "desc": "We offer comprehensive taxation services to help you navigate complex tax regulations.",
+        "title": "Bexil Computer & Solutions Ltd",
+        "desc": "Providing comprehensive computer and IT solutions for your business needs.",
         "image": web_designer,
     },
     {
-        "title": "Automations",
-        "desc": "Our hardware and software automation solutions streamline your processes.",
-        "image": app_dev,
-    },
-    {
-        "title": "Software Development",
-        "desc": "We develop custom software tailored to your business needs.",
+        "title": "Bexil Transport Services",
+        "desc": "Offering reliable and efficient transport services for all logistics requirements.",
         "image": web_maintenance,
     },
     {
-        "title": "Entrepreneurship",
-        "desc": "We support entrepreneurs to help their businesses grow.",
+        "title": "Bexil Gardens",
+        "desc": "Home to our football academy, fast-food restaurant, NGO foundation, and event centers.",
         "image": graphic_design,
     },
     {
-        "title": "Data Science",
-        "desc": "Our data science services help you make informed decisions.",
-        "image": web_designer,
-    },
-    {
-        "title": "Hardware Installations",
-        "desc": "We install hardware systems like CCTV cameras for security.",
+        "title": "Bexil Homes & Constructions Ltd",
+        "desc": "Building quality homes and providing exceptional construction services.",
         "image": repairs,
     },
-    {
-        "title": "Business Growth",
-        "desc": "We assist businesses and individuals in achieving growth.",
-        "image": web_maintenance,
-    },
-]
+];
