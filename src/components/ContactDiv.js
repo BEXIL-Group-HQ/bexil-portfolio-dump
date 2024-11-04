@@ -1,7 +1,7 @@
 import React from 'react'
 import { ImLocation2, ImPhone } from "react-icons/im"
 import { FaAt, FaLinkedin, FaTwitter } from "react-icons/fa"
-import { Fade } from 'react-reveal'
+import { Fade } from "react-awesome-reveal"
 
 export default function ContactDiv() {
   return (

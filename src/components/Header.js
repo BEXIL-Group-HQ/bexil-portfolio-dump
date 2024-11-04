@@ -1,5 +1,5 @@
 import React from 'react'
-import { Fade, Zoom } from 'react-reveal'
+import { Fade, Zoom } from "react-awesome-reveal"
 import { HashLink } from 'react-router-hash-link'
 
 // images

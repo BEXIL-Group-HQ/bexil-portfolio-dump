@@ -1,5 +1,5 @@
 import React from 'react'
-import { Fade } from "react-reveal"
+import { Fade } from "react-awesome-reveal"
 import { ImLocation2, ImPhone } from "react-icons/im"
 import { FaAt, FaLinkedin, FaTwitter } from "react-icons/fa"
 import { Link } from 'react-router-dom'

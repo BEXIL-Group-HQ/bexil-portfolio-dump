@@ -1,7 +1,7 @@
 import React from 'react'
 import WorkCard from './WorkCard';
 import { workData } from "./workCardData"
-import { Roll } from "react-reveal"
+import { Roll } from "react-awesome-reveal"
 
 export default function WorkSection() {
     const cards = workData.map((item, index) => {

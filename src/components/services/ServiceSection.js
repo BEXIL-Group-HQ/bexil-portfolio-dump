@@ -1,5 +1,5 @@
 import React from 'react'
-import { Bounce } from 'react-reveal'
+import { Bounce } from "react-awesome-reveal"
 import ServiceCard from './ServiceCard'
 import {cardData} from './serviceCardsData'
 

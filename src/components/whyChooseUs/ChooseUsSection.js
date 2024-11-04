@@ -1,5 +1,5 @@
 import React from 'react'
-import { Roll } from "react-reveal"
+import { Roll } from "react-awesome-reveal"
 import ChooseUsCard from './ChooseUsCard';
 import { ChooseUsdata } from './chooseUsData';
 
