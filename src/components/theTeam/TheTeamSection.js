@@ -1,5 +1,4 @@
 import React from 'react'
-import { Roll } from "react-awesome-reveal"
 import { TeamCard } from './TeamCard';
 import { theTeamData } from './teamData';
 

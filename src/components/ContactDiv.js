@@ -1,6 +1,6 @@
 import React from 'react'
 import { ImLocation2, ImPhone } from "react-icons/im"
-import { FaAt, FaLinkedin, FaTwitter } from "react-icons/fa"
+import { FaAt } from "react-icons/fa"
 import { Fade } from "react-awesome-reveal"
 
 export default function ContactDiv() {
@@ -15,7 +15,7 @@ export default function ContactDiv() {
             <div className='contactDiv--items'>
                 <div>
                     <div className="gmap_canvas">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3905.1340889847443!2d13.152386275921302!3d11.82588123895884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x11049f004aab05b3%3A0x46def503debe74c1!2sBEXIL%20GARDENS!5e0!3m2!1sen!2sng!4v1730708957632!5m2!1sen!2sng" width="80%" height="300px"  loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                    <iframe title="office location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3905.1340889847443!2d13.152386275921302!3d11.82588123895884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x11049f004aab05b3%3A0x46def503debe74c1!2sBEXIL%20GARDENS!5e0!3m2!1sen!2sng!4v1730708957632!5m2!1sen!2sng" width="80%" height="300px"  loading="lazy" referrerpolicy="no-referrer-when-downgrade"
                     frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
                     ></iframe>
                     </div>

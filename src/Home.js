@@ -9,7 +9,6 @@ import ServiceSection from './components/services/ServiceSection'
 import WorkSection from './components/ourProcess/WorkSection'
 import ContactDiv from './components/ContactDiv'
 import ChooseUsSection from './components/whyChooseUs/ChooseUsSection'
-import TheTeam from './components/theTeam/TheTeamSection'
 
 export default function Home() {
   return (
