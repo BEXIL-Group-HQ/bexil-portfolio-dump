@@ -1,27 +1,37 @@
 export const workData = [
     {
-        "position": "01",
-        "title": "Requirement/Info",
-        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, consectetur."
+        "step": "01",
+        "title": "Initial Consultation",
+        "desc": "We begin by understanding your business needs and objectives.",
     },
     {
-        "position": "02",
-        "title": "Project Planning",
-        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, consectetur."
+        "step": "02",
+        "title": "Requirement Analysis",
+        "desc": "We analyze your requirements to plan the best approach.",
     },
     {
-        "position": "03",
-        "title": "Prototyping & Design",
-        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, consectetur."
+        "step": "03",
+        "title": "Design and Proposal",
+        "desc": "We create a design and proposal tailored to your needs.",
     },
     {
-        "position": "04",
-        "title": "Coding/Development",
-        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, consectetur."
+        "step": "04",
+        "title": "Development",
+        "desc": "Our team develops the solution using the latest technologies.",
     },
     {
-        "position": "05",
+        "step": "05",
+        "title": "Testing",
+        "desc": "We rigorously test to ensure quality and reliability.",
+    },
+    {
+        "step": "06",
         "title": "Deployment",
-        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, consectetur."
-    }
-]
+        "desc": "We deploy the solution and ensure everything runs smoothly.",
+    },
+    {
+        "step": "07",
+        "title": "Support and Maintenance",
+        "desc": "We provide ongoing support and updates as needed.",
+    },
+];

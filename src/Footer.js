@@ -15,8 +15,8 @@ export default function Footer() {
                 </ul>
                 <ul>
                     <li>CONTACT US</li>
-                    <li><Link>Office</Link></li>
-                    <li><Link>Call: +234 xxx - xxx - xxx</Link></li>
+                    <li><Link>Bexil Gardens, Gidan Madara, Maiduguri, Borno State</Link></li>
+                    <li><Link>Call: +2348068375557</Link></li>
                     <li><Link>Mail: @techdesk.io</Link></li>
                 </ul>
                 <ul>
@@ -27,9 +27,9 @@ export default function Footer() {
                     <li><Link>Instagram</Link></li>
                 </ul>
 
-                <h2>Tech Desk</h2>
+                <h2>Bexil Group</h2>
             </div>
-            <p>&copy; 2022 | Tech Desk Inc.</p>
+            <p>&copy; 2022 | Bexil Group Inc.</p>
         </div>
     </footer>
   )

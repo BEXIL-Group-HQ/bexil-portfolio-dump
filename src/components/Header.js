@@ -10,11 +10,11 @@ export default function Header() {
     <header>
         <Fade left >
         <div>
-            <h1>Let Tech Desk scale up your business the digital way!</h1>
+            <h1>Let Bexil Group scale up your business the digital way!</h1>
             <p>
-                We are focused on boosting the productivity and growth of businesses using Tech. Digitally helping businesses yield higher percentages.  
+                We are focused on boosting the productivity, automations and growth of businesses using Tech. Digitally helping businesses yield higher percentages.  
             </p>
-            <p>See <span style={{borderBottom: "1px ridge #FF9270"}}><HashLink to="#whyOwnASite">why you need a website!</HashLink></span></p>
+            <p>See <span style={{borderBottom: "1px ridge #FF9270"}}><HashLink to="#whyOwnASite">why you need a website or automations!</HashLink></span></p>
             <button>
                 <a href="/getquote">HIRE US TODAY!</a>
             </button>

@@ -8,7 +8,7 @@ export default function WorkSection() {
         return (
                 <Roll key={index}>
                   <WorkCard 
-                  position={item.position}
+                  position={`0${index+1}`}
                   title={item.title}
                   desc={item.desc}
                   />

@@ -13,11 +13,10 @@ export const sectionsData = [
     },
     {
         "id": "#whyOwnASite",
-        "title": "WHY OWN A WEBSITE!?",
-        "desc": "According to Forbes \"having a website is an opportunity to make a great first impression and give people comfort that you're a real business.\" With the invention of the Internet, life started a whole new journey with generation of computers getting better. It has grown to be the most preferrable way of communication from Social media to Portfolio websites. With roughly over 60% of the global population using the internet, Websites play an important role as over 70% of small business or individuals/Freelancers today own a Website. A website does not only give an easy finding and up to date info about a brand/company but also increases your business' credibility.",
-        "button": "get one",
-        "image": why,
-        "button": "get a quote"
+        "title": "WHY EMBRACE TECHNOLOGY SOLUTIONS?",
+        "desc": "In the digital age, technology is the driving force behind business growth and efficiency. Whether it's automation, software development, taxation, or data science, integrating innovative solutions can elevate your operations and competitiveness. Over 80% of businesses leveraging advanced technologies report significant improvements in productivity and profitability. Embrace technology to unlock your full potential and stay ahead in today's fast-paced market.",
+        "button": "Learn How",
+        "image": why
     },
     {
         "title": "Timely delivery",

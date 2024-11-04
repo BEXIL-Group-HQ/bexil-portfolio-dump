@@ -51,7 +51,7 @@ export default function Home() {
         image={sectionsData[3].image}
         type="coloured"
         />
-        <TheTeam />
+        {/* <TheTeam /> */}
         <ContactDiv />
     </React.StrictMode>
   )

@@ -7,33 +7,38 @@ import repairs from "../../assets/repairs.svg"
 
 export const cardData = [
     {
-        "title": "Web Design",
-        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quod voluptate ducimus similique earum inventore!",
+        "title": "Taxations",
+        "desc": "We offer comprehensive taxation services to help you navigate complex tax regulations.",
         "image": web_designer,
     },
     {
-        "title": "Web Maintenance",
-        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quod voluptate ducimus similique earum inventore!",
-        "image": web_maintenance,
-    },
-    {
-        "title": "App Development",
-        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quod voluptate ducimus similique earum inventore!",
+        "title": "Automations",
+        "desc": "Our hardware and software automation solutions streamline your processes.",
         "image": app_dev,
     },
     {
-        "title": "Graphic Design",
-        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quod voluptate ducimus similique earum inventore!",
+        "title": "Software Development",
+        "desc": "We develop custom software tailored to your business needs.",
+        "image": web_maintenance,
+    },
+    {
+        "title": "Entrepreneurship",
+        "desc": "We support entrepreneurs to help their businesses grow.",
         "image": graphic_design,
     },
     {
-        "title": "Website Customization",
-        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quod voluptate ducimus similique earum inventore!",
+        "title": "Data Science",
+        "desc": "Our data science services help you make informed decisions.",
         "image": web_designer,
     },
     {
-        "title": "Computer Repairs",
-        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quod voluptate ducimus similique earum inventore!",
+        "title": "Hardware Installations",
+        "desc": "We install hardware systems like CCTV cameras for security.",
         "image": repairs,
+    },
+    {
+        "title": "Business Growth",
+        "desc": "We assist businesses and individuals in achieving growth.",
+        "image": web_maintenance,
     },
 ]

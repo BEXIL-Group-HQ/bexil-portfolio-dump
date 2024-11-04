@@ -20,6 +20,6 @@ export const ChooseUsdata = [
     {
         "icon": <FcIdea />,
         "title": "24/7 Support",
-        "desc": "Working with Tech Desk gets you a free Support. Our support team are available 24/7 to happily render support to you.",
+        "desc": "Working with Bexil Group gets you a free Support. Our support team are available 24/7 to happily render support to you.",
     }
 ]

@@ -54,7 +54,9 @@ export default function Nav() {
             </ul>
             
             {/* <h2>tech desk</h2> */}
-            <img src={logo} alt='Tech Desk Inc. Logo' />
+            <h2>
+                Bexil Group
+            </h2>
 
             <ul>
                 <li>
@@ -64,7 +66,7 @@ export default function Nav() {
                     <HashLink to="#contactDiv">contact us</HashLink>
                 </li>
                 <button>
-                    <NavLink>Schedule a call</NavLink>
+                    <HashLink to="#contactDiv">Schedule a call</HashLink>
                 </button>
             </ul>
         </div>
