@@ -17,7 +17,7 @@ export default function Footer() {
                     <li>CONTACT US</li>
                     <li><Link>Bexil Gardens, Gidan Madara, Maiduguri, Borno State</Link></li>
                     <li><Link>Call: +2348068375557</Link></li>
-                    <li><Link>Mail: @techdesk.io</Link></li>
+                    <li><Link>Mail: bexilcomputer@gmail.com</Link></li>
                 </ul>
                 <ul>
                     <li>CONNECT WITH US</li>
